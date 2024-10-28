@@ -55,18 +55,30 @@ main.main {
     color: var(--gray-color);
 }
 
-.btn-warning {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+section {
+    padding: 50px 0;
 }
 
-.btn-outline-warning {
-    border-color: var(--accent-color);
+.section-title {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--contrast-color);
+    font-weight: 700;
 }
 
-.btn-outline-warning:hover {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+.section-title span {
+    background-color: var(--bg-color);
+    padding-right: 1rem;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: -1;
 }
 
 /* ================ Header ===============*/
@@ -106,6 +118,20 @@ ul.social-icons li :hover {
     color: var(--accent-color);
 }
 
+.btn-warning {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.btn-outline-warning {
+    border-color: var(--accent-color);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
 .header-top .btn {
     background-color: white;
 }
@@ -119,6 +145,10 @@ ul.social-icons li :hover {
 
 .header-logo:hover {
     color: var(--contrast-color);
+}
+
+.fa-heart {
+    color: var(--red-color);
 }
 
 .cart-buttons .btn {
@@ -135,7 +165,8 @@ ul.social-icons li :hover {
     box-shadow: 0 10px 10px rgb(0, 0, 0, 0.3);
 }
 
-.header-bottom .navbar, .header-bottom .navbar .dropdown-menu {
+.header-bottom .navbar,
+.header-bottom .navbar .dropdown-menu {
     background-color: var(--contrast-color) !important;
 }
 
@@ -159,6 +190,45 @@ ul.social-icons li :hover {
 }
 
 /* ================ Header ===============*/
+
+/* ================ Main ===============*/
+
+/* ================ Carousel ===============*/
+.carousel-caption {
+    text-shadow: 0 0 2px rgb(0, 0, 0, 1);
+    bottom: 2 rem;
+}
+
+/* ================ Carousel ===============*/
+/* ================ Advantages ===============*/
+.advantages .items {
+    margin-top: 50px;
+}
+
+.advantages .items .item {
+    background-color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 7%;
+    transition: all 0.3s;
+}
+
+.advantages .items .item:hover{
+    box-shadow: 0 15px 30px -20px rgb(0, 0, 0, .5);
+}
+
+.advantages i {
+    font-size: 70px;
+    color: var(--accent-color);
+}
+
+/* ================ Advantages ===============*/
+
+
+/* ================ Main ===============*/
 
 @media only screen and (min-width: 992px) {
     .header-bottom .navbar .dropdown-menu-end {
