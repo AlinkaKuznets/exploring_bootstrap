@@ -1,9 +1,9 @@
 :root {
     --bg-color: #f5f5f5;
-    --text-color: #084C61;
+    --text-color: #095268;
     --accent-color: #FFC857;
     --contrast-color: #177E89;
-    --gray-color: #323031;
+    --gray-color: #676667;
     --red-color: #DB3A34;
 }
 
@@ -139,6 +139,7 @@ ul.social-icons li :hover {
 .header-logo {
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 2.5rem;
     color: var(--accent-color);
     transition: all .3s;
 }
@@ -161,7 +162,7 @@ ul.social-icons li :hover {
 }
 
 .header-bottom {
-    border-top: 3pix solid var(--accent-color);
+    border-top: 4px solid var(--accent-color);
     box-shadow: 0 10px 10px rgb(0, 0, 0, 0.3);
 }
 
@@ -189,6 +190,19 @@ ul.social-icons li :hover {
     color: var(--accent-color);
 }
 
+.headernav-scroll.header-bottom .navbar .offcanvas:not(.show) .nav-link {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.offcanvas-start {
+    background-color: var(--text-color);
+}
+
+.navbar .dropdown-menu.dropdown-menu-end a {
+    color: var(--bg-color);
+}
+
 /* ================ Header ===============*/
 
 /* ================ Main ===============*/
@@ -201,11 +215,7 @@ ul.social-icons li :hover {
 
 /* ================ Carousel ===============*/
 /* ================ Advantages ===============*/
-.advantages .items {
-    margin-top: 50px;
-}
-
-.advantages .items .item {
+.advantages .item {
     background-color: #FFF;
     text-align: center;
     padding: 1rem;
@@ -216,7 +226,7 @@ ul.social-icons li :hover {
     transition: all 0.3s;
 }
 
-.advantages .items .item:hover{
+.advantages .item:hover {
     box-shadow: 0 15px 30px -20px rgb(0, 0, 0, .5);
 }
 
@@ -227,6 +237,117 @@ ul.social-icons li :hover {
 
 /* ================ Advantages ===============*/
 
+/* ================ Featured products ===============*/
+
+/* ================  Product Card ===============*/
+.product-card {
+    transition: all .3s;
+    background-color: #FFF;
+    border-radius: 5%;
+    position: relative;
+    box-shadow: 0 15px 30px -20px rgb(0, 0, 0, .5);
+    ;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card-offer {
+    color: #FFF;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-transform: uppercase;
+}
+
+.product-card-offer>div {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.offer-hit {
+    background-color: var(--red-color);
+}
+
+.offer-new {
+    background-color: var(--accent-color);
+}
+
+.product-thumb {
+    text-align: center;
+}
+
+.product-thumb img {
+    max-width: 225px;
+}
+
+.products-details {
+    padding: 10px 20px;
+}
+
+.products-details h4 {
+    font-size: 1.3rem;
+}
+
+.products-details h4 a {
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.products-details h4 a:hover {
+    color: var(--accent-color);
+}
+
+.products-excerpt {
+    opacity: 0.7;
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+.prosuct-bottom-details {
+    border-top: 1px solid #e1f3f5;
+    padding-top: 1rem;
+}
+
+.product-price {
+    font-size: 18px;
+    color: var(--red-color);
+    font-weight: 600;
+}
+
+.product-price small {
+    color: var(--gray-color);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.btn-outline-warning {
+    color: var(--contrast-color);
+    border-color: var(--contrast-color);
+}
+
+/* ================  Product Card ===============*/
+
+/* ================ Featured products ===============*/
 
 /* ================ Main ===============*/
 
@@ -237,7 +358,7 @@ ul.social-icons li :hover {
     }
 
     .header-bottom .navbar .nav-link {
-        padding-left: 1rem;
+        padding: 1rem;
     }
 
 }
