@@ -144,6 +144,7 @@ ul.social-icons li :hover {
     font-size: 2.5rem;
     color: var(--accent-color);
     transition: all .3s;
+    text-shadow: 4px 4px 2px var(--contrast-color);
 }
 
 .header-logo:hover {
@@ -231,15 +232,16 @@ td .btn-danger {
     border-radius: 50%;
 }
 
-.btn-outline-checkout{
+.btn-outline-checkout {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
 
-.btn-outline-checkout:hover{
+.btn-outline-checkout:hover {
     background-color: var(--contrast-color);
     color: var(--accent-color);
 }
+
 /* ================ Header ===============*/
 
 /* ================ Main ===============*/
@@ -398,7 +400,8 @@ td .btn-danger {
     padding-right: 50px;
 }
 
-.about-us .section-title span {
+.about-us .section-title span,
+.sidebar .section-title span {
     background-color: #FFF;
 }
 
@@ -458,6 +461,89 @@ footer a:hover {
 
 /* ================ Main ===============*/
 
+/* ================ Category Page ===============*/
+.breadcrumbs {
+    margin: 30px 0;
+    background-color: #FFF;
+    padding: 1rem;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: var(--contrast-color);
+    transition: all 0.5s;
+    margin-right: 0.5rem;
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent-color);
+}
+
+.breadcrumbs a::after {
+    content: " /";
+    padding-left: 0.5rem;
+    color: var(--contrast-color);
+}
+
+.sidebar {
+    background-color: #FFF;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid var(--contrast-color);
+}
+
+.filter-block:not(:last-child) {
+    margin-bottom: 2rem;
+
+}
+
+.filter-block .form-check {
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input [type="checkbox"] {
+    border-color: var(--text-color);
+}
+
+.form-check-input:focus {
+    border-color: var(--contrast-color);
+    box-shadow: 0 0 0 .25rem rgba(90, 170, 150, 0.5);
+}
+
+.form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.filter-block .badge {
+    color: var(--text-color);
+}
+
+.page-link {
+    color: var(--contrast-color);
+}
+
+.page-link:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.active>.page-link,
+.page-link.active {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color)
+}
+
+/* ================ Category Page ===============*/
+
 @media only screen and (min-width: 992px) {
     .header-bottom .navbar .dropdown-menu-end {
         margin-left: 0;
@@ -474,5 +560,15 @@ footer a:hover {
 @media only screen and (min-width: 992px) {
     .header-bottom .navbar .dropdown-menu {
         padding-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar .collapse-filter {
+        display: block;
+    }
+
+    .sidebar .collapse-filter-btn {
+        display: none;
     }
 }
