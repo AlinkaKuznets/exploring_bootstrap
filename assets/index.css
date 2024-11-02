@@ -83,6 +83,35 @@ section {
 
 }
 
+.btn-outline-checkout {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline-checkout:hover {
+    background-color: var(--contrast-color);
+    color: var(--accent-color);
+}
+
+.btn-checkout {
+    border-color: var(--accent-color);
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+}
+
+.btn-checkout:hover {
+    border-color: var(--contrast-color);
+    color: var(--accent-color);
+    background-color: var(--contrast-color);
+
+}
+
+label.required::before {
+    content: "* ";
+    color: #dc3545;
+    font-weight: bold;
+}
+
 /* ================ Header ===============*/
 
 .header-top-phone a {
@@ -232,15 +261,9 @@ td .btn-danger {
     border-radius: 50%;
 }
 
-.btn-outline-checkout {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
 
-.btn-outline-checkout:hover {
-    background-color: var(--contrast-color);
-    color: var(--accent-color);
-}
+
+
 
 /* ================ Header ===============*/
 
@@ -384,6 +407,11 @@ td .btn-danger {
     border-color: var(--contrast-color);
 }
 
+.btn-warning {
+    color: var(--contrast-color);
+    border-color: var(--contrast-color);
+}
+
 .owl-carousel-full .owl-item img {
     display: inline-block;
     width: auto;
@@ -402,7 +430,7 @@ td .btn-danger {
 
 .about-us .section-title span,
 .sidebar .section-title span,
-.product-content .section-title span {
+.bg-white .section-title span {
     background-color: #FFF;
 }
 
@@ -558,40 +586,41 @@ footer a:hover {
     opacity: 0.65;
 }
 
-.product-content .card i{
+.product-content .card i {
     color: var(--accent-color);
 }
 
-.product-content .card{
+.product-content .card {
     padding-left: 20px;
     font-size: 14px;
 }
 
-.product-content .card ul li::before{
+.product-content .card ul li::before {
     content: "\f105";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-right: 10px;
 }
 
-.card{
+.card {
     border-color: #177E89;
 }
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
     color: var(--contrast-color);
 }
-.nav-tabs .nav-link:hover{
+
+.nav-tabs .nav-link:hover {
     color: var(--contrast-color);
     font-weight: bold;
 }
 
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active {
     color: var(--contrast-color);
     font-weight: bold;
 }
 
-.tab-content{
+.tab-content {
     padding-top: 30px;
 }
 
@@ -628,7 +657,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-    .product-contetn-details .nav-tabs .nav-link{
+    .product-contetn-details .nav-tabs .nav-link {
         padding-left: 8px;
         padding-right: 8px;
     }
